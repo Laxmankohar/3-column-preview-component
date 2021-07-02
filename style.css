@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lexend Deca", "sanserif";
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  border-radius: 10px;
+}
+h2 {
+  font-family: "Big Shoulders Display", "cursive";
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  font-size: 30px;
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid transparent;
+  width: 50%;
+  text-align: start;
+  margin: 80px auto;
+}
+
+
+/* card */
+
+.card {
+  padding: 50px 35px 50px 30px;
+  border: 1px solid transparent;
+}
+
+#card1 {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 5px 0 0 5px;
+}
+#card2 {
+  background-color: hsl(184, 100%, 22%);
+}
+#card3 {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 5px 5px 0;
+}
+
+/* image */
+img {
+  margin-top: -50px;
+  width: 25%;
+}
+
+
+/* button */
+button {
+  font-family: "Lexend Deca", "sanserif";
+  color: hsl(0, 0%, 95%);
+  margin-top: 50px;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 10px;
+  font-weight: 700;
+}
+#card1 button {
+  color: hsl(31, 77%, 52%);
+}
+#card2 button {
+  color: hsl(184, 100%, 22%);
+}
+#card3 button {
+  color: hsl(179, 100%, 13%);
+}
+
+
+/* attribution */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+
+/* media queries */
+
+@media screen and (max-width: 650px) {
+  .container {
+    display: block;
+  }
+  #card1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 5px 0 0;
+  }
+  #card3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 768px) {
+  .container {
+    width: 87%;
+  }
+  .card {
+    min-height: 471px;
+  }
+}
+@media screen and (min-width: 779px) and (max-width: 1440px) {
+  .container {
+    width: 60%;
+  }
+  .card {
+    width: 31%;
+  }
+}
